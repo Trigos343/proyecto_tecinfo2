@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cursos Gratuitos para Maestros</title>
+    <link rel="stylesheet" href="contenido.css">
+</head>
+<body>
+    <header>
+        <h1>Educación de Calidad para Maestros</h1>
+        <p>Explora cursos gratuitos diseñados para fortalecer la enseñanza con compromiso y pasión.</p>
+    </header>
+
+    <nav>
+        <button onclick="mostrarSeccion('inicio')">Inicio</button>
+        <button onclick="mostrarSeccion('cursos')">Cursos</button>
+        <button onclick="mostrarSeccion('contacto')">Contacto</button>
+    </nav>
+
+    <main>
+        <section id="inicio" class="seccion activa">
+            <h2>Bienvenidos</h2>
+            <p>Un espacio donde los educadores pueden acceder a recursos de alta calidad sin costo alguno.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Teacher_Classroom.jpg/640px-Teacher_Classroom.jpg" alt="Maestro enseñando" class="imagen-vintage">
+        </section>
+
+        <section id="cursos" class="seccion">
+            <h2>Cursos Destacados</h2>
+            <ul>
+                <li>📘 Estrategias de Enseñanza Inclusiva</li>
+                <li>📗 Evaluación para el Aprendizaje</li>
+                <li>📕 Didáctica y Tecnología Educativa</li>
+            </ul>
+            <button onclick="alert('¡Inscripción exitosa!')">Inscribirse Gratis</button>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contáctanos</h2>
+            <form onsubmit="enviarFormulario(event)">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Educación de Calidad. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="contenido.js"></script>
+</body>
+</html>
